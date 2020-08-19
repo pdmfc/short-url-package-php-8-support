@@ -16,7 +16,7 @@ class ShortUrlClient
     {
         $this->client = new Client([
             'base_uri' => config('shorturl.base_url'),
-            'header' => [
+            'headers' => [
                 'APPID' => config('shorturl.auth.id'),
                 'APPKEY' => config('shorturl.auth.token'),
                 'Content-Type'  => 'application/json',
