@@ -53,7 +53,9 @@ class ShortUrlClient
     {
 
         try {
-            $response = $this->client->request('POST', "/api/createShortUrl", $params);
+            $response = $this->client->request('POST', "/api/createShortUrl", [
+                'form_params' => $params
+            ]);
 
         } catch (GuzzleException $exception) {
             $response = $exception->getResponse();
@@ -71,7 +73,9 @@ class ShortUrlClient
         }
 
         try {
-            $response = $this->client->request('PUT', "/api/changeShortUrl/$shortUrlCode", $params);
+            $response = $this->client->request('PUT', "/api/changeShortUrl/$shortUrlCode", [
+                'form_params' => $params
+            ]);
 
         } catch (GuzzleException $exception) {
             $response = $exception->getResponse();
