@@ -73,7 +73,7 @@ class ShortUrlClient
         }
 
         try {
-            $response = $this->client->request('PUT', "/api/changeShortUrl/$shortUrlCode", [
+            $response = $this->client->request('POST', "/api/changeShortUrl/$shortUrlCode", [
                 'form_params' => $params
             ]);
 
