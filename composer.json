@@ -14,6 +14,14 @@
             "Pdmfc\\Shorturl\\": "src"
         }
     },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Pdmfc\\Shorturl\\ShortUrlProvider"
+            ]
+        }
+    },
+
     "license": "MIT",
     "authors": [
         {
