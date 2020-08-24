@@ -12,7 +12,7 @@ class ShortUrlProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__.'/config/shorturl.php' =>  config_path('shorturl.php'),
+            __DIR__.'/../config/shorturl.php' =>  config_path('shorturl.php'),
         ], 'short_config');
     }
 
