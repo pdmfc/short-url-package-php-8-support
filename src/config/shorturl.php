@@ -11,7 +11,7 @@ return [
     |
     */
 
-    'base_url' => env('API_BASE_URL'),
+    'base_url' => env('SHORT_URL_API_BASE_URL'),
 
     /*
     |--------------------------------------------------------------------------
@@ -23,7 +23,7 @@ return [
     */
 
     'auth' => [
-        'id' => env('API_ID'),
-        'token' => env('API_TOKEN'),
+        'id' => env('SHORT_URL_API_ID'),
+        'token' => env('SHORT_URL_API_TOKEN'),
     ],
 ];
