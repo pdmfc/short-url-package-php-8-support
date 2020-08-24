@@ -129,6 +129,6 @@ If something is wrong with methods the response will be the following:
 
 # .env
 
-API_ID=  
-API_TOKEN=  
-API_BASE_URL=
+SHORT_URL_API_ID=  
+SHORT_URL_API_TOKEN=  
+SHORT_URL_API_BASE_URL=
