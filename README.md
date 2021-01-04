@@ -10,7 +10,7 @@ In your `composer.json` add the following to the `"repositories"` section:
 
 Require the package:
 ```shell
-composer require pdmfc/shorturl:*
+composer require pdmfc/shorturl
 ```
 
 ### Configuration
