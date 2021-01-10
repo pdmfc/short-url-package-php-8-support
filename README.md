@@ -70,7 +70,7 @@ $params = [
     'originalUrl' => 'www.original-url.com/long', // Url where you will be redirected. (required)
     'liveTime' => 0, // expiration time. (optional) [default: 0]
     'active' => true, // Define if the link is active. (optional) [default: true]
-    'shortUrl' => 'some_custom_string', // Custom url. If none provided, it will automatically generated. (optional)
+    'shortUrl' => '1C', // Custom url. If none provided, it will automatically generated. (optional)
 ];
 
 $response = $client->createUrl($params);
@@ -79,7 +79,7 @@ $response = $client->createUrl($params);
 /*
 {
     "Id": 26,
-    "shortUrl": "http://teste.ll/1C",
+    "shortUrl": "http://s.pdm.pt/1C",
     "qrCode": "<?xml version=\"1.0\" encoding..."
 }
 */
