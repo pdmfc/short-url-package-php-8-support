@@ -11,8 +11,12 @@ installing dependencies:
   stage: building
   script:
     - composer install --optimize-autoloader
+  tags:
+    - short-url-package
 
 running test suite:
   stage: testing
   script:
     - vendor/bin/phpunit
+  tags:
+    - short-url-package
