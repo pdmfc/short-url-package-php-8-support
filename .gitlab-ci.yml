@@ -20,3 +20,5 @@ running test suite:
     - vendor/bin/phpunit
   tags:
     - short-url-package
+  only:
+    - tests
