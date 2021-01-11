@@ -1,0 +1,18 @@
+stages:
+  - building
+  - testing
+
+variables:
+  SHORT_URL_API_BASE_URL: ${SHORT_URL_API_BASE_URL}
+  SHORT_URL_API_ID: ${SHORT_URL_API_ID}
+  SHORT_URL_API_TOKEN: ${SHORT_URL_API_TOKEN}
+
+installing dependencies:
+  stage: building
+  script:
+    - composer install --optimize-autoloader
+
+running test suite:
+  stage: testing
+  script:
+    - vendor/bin/phpunit
