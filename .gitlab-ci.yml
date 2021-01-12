@@ -12,7 +12,7 @@ running test suite:
     - composer install --optimize-autoloader
     - cp phpunit.xml.dist phpunit.xml
     - ls
-    - ./vendor/bin/phpunit
+    - ./vendor/bin/phpunit --testdox
   tags:
     - short-url-package
   only:
