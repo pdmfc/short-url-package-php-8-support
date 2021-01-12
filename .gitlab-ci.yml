@@ -10,8 +10,6 @@ running test suite:
   stage: testing
   script:
     - composer install --optimize-autoloader
-    - cp phpunit.xml.dist phpunit.xml
-    - ls
     - ./vendor/bin/phpunit --testdox
   tags:
     - short-url-package
