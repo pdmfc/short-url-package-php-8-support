@@ -1,0 +1,12 @@
+<phpunit colors="true" bootstrap="vendor/autoload.php">
+    <testsuites>
+        <testsuite name="Url Shortener Test Suite">
+            <directory suffix="Test.php">tests</directory>
+        </testsuite>
+    </testsuites>
+    <php>
+<!--        <env name="SHORT_URL_API_BASE_URL" value=""/>-->
+<!--        <env name="SHORT_URL_API_ID" value=""/>-->
+<!--        <env name="SHORT_URL_API_TOKEN" value=""/>-->
+    </php>
+</phpunit>

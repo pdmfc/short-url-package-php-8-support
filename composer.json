@@ -1,17 +1,30 @@
 {
     "name": "pdmfc/shorturl",
-    "description": "Shortener Url",
+    "description": "Url Shortener",
     "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Miguel Gonçalves",
+            "email": "miguel.goncalves@pdmfc.com"
+        }
+    ],
     "require": {
-        "illuminate/support": "~5.5|~6.0|~7.0",
-        "php": "^7.3"
+        "php": "^7.3",
+        "guzzlehttp/guzzle": "^7.2"
     },
     "require-dev": {
-        "phpunit/phpunit": "~7.0"
+        "orchestra/testbench": "^6.7",
+        "phpunit/phpunit": "^9.0"
     },
     "autoload": {
         "psr-4": {
             "Pdmfc\\Shorturl\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Pdmfc\\Shorturl\\Tests\\": "tests"
         }
     },
     "extra": {
@@ -21,13 +34,9 @@
             ]
         }
     },
-
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Miguel Gonçalves",
-            "email": "miguel.goncalves@pdmfc.com"
-        }
-    ],
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "sort-packages": true
+    }
 }
