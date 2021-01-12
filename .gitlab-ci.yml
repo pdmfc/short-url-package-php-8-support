@@ -18,7 +18,8 @@ running test suite:
   stage: testing
   script:
     - cp phpunit.xml.dist phpunit.xml
-    - vendor/bin/phpunit
+    - ls
+    - ./vendor/bin/phpunit
   tags:
     - short-url-package
   only:
