@@ -17,6 +17,7 @@ installing dependencies:
 running test suite:
   stage: testing
   script:
+    - cp phpunit.xml.dist phpunit.xml
     - vendor/bin/phpunit
   tags:
     - short-url-package
