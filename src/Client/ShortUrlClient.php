@@ -19,6 +19,7 @@ class ShortUrlClient
 
     public function __construct()
     {
+//        dd('config', config('shorturl.auth.id'));
         $this->client = new Client([
                 'base_uri' => $this->baseUri(),
                 'headers' => [
