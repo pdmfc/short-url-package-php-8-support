@@ -14,5 +14,3 @@ running test suite:
     - ./vendor/bin/phpunit --verbose --testdox --colors=always
   tags:
     - short-url-package
-  only:
-    - tests
