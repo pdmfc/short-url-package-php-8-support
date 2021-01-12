@@ -1,5 +1,4 @@
 stages:
-  - building
   - testing
 
 variables:
@@ -7,16 +6,10 @@ variables:
   SHORT_URL_API_ID: ${SHORT_URL_API_ID}
   SHORT_URL_API_TOKEN: ${SHORT_URL_API_TOKEN}
 
-installing dependencies:
-  stage: building
-  script:
-    - composer install --optimize-autoloader
-  tags:
-    - short-url-package
-
 running test suite:
   stage: testing
   script:
+    - composer install --optimize-autoloader
     - cp phpunit.xml.dist phpunit.xml
     - ls
     - ./vendor/bin/phpunit
