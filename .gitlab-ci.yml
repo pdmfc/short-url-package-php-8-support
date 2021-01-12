@@ -11,6 +11,7 @@ running test suite:
   script:
     - composer install --optimize-autoloader
     - cp phpunit.xml.dist phpunit.xml
+    - ls
     - ./vendor/bin/phpunit --testdox --colors=allways
   tags:
     - short-url-package
