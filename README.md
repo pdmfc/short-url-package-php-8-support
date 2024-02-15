@@ -18,13 +18,13 @@ ___
 ```json
 {
     "type": "vcs",
-    "url": "https://gitlab.pdmfc.com/pdmfc/short-url-package.git"
+    "url": "https://github.com/pdmfc/short-url-package-php-8-support.git"
 }
 ```
 
 - Require the package:
 ```shell
-composer require pdmfc/shorturl
+composer require pdmfc/short-url-package-php-8-support
 ```
 
 ### Configuration
